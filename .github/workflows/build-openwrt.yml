@@ -139,7 +139,7 @@ jobs:
       with:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
-        files: ${{ env.FIRMWARE }}/*.vmdk
+        files: ${{ env.FIRMWARE }}/*
 
     - name: Upload firmware to cowtransfer
       id: cowtransfer
